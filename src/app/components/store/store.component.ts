@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from 'src/app/service/api.service';
 
 @Component({
   selector: 'app-store',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoreComponent implements OnInit {
 
-  constructor() { }
+  public productList: any; // store all the product here in this property
+
+  constructor(private api:ApiService) { }
 
   ngOnInit(): void {
-  }
+    this.api.getProduct()
+    .subscribe(res => {
+      this.productList = res;
+     }
+  )}
+  
+  addtoCart(item:any){
 
+  }
 }
