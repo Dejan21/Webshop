@@ -1,6 +1,6 @@
 .navbar-collapse{
     position: absolute;
-    right: 80px;
+    right: 130px;
     
 }
 nav{
@@ -18,3 +18,27 @@ nav{
 .navbar-brand{
     color:white;
 }
+img{
+    height: 40px;
+    color: white;
+}
+.btn{
+    color:white;
+   position: absolute;
+    left:260px
+}
+.bg-danger{
+    position: absolute;
+    top:5px;
+}
+
+a:hover{
+    color: green;
+}
+@media screen and (max-width:650px) {
+   
+    
+
+  
+}
+    

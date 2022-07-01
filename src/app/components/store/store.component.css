@@ -15,8 +15,8 @@
   flex-direction: row;
   width: 500px;
   height: 430px;
-  background-color: rgb(225, 184, 184);
-  border:none
+  background-color:  rgb(176, 208, 206);
+  border:none;
 }
  .item img{
     width: 65px;
@@ -59,24 +59,85 @@
     transition: 0.3s ease-in-out;
     transform:scale(1.1);
 }
-.btn-primary{
+.btn-dark{
     margin-top: 220px;
-    width: 360px !important;
+    width: 200px !important ;
     height: 50px;
+    border-radius: 50px;
+    margin-left: 45px;
 }
 strong{
    color:blueviolet;
    position:absolute;
-   text-overflow: ellipsis;
-   
+   text-overflow: ellipsis; 
 }
 .dropdown{
     padding: 10px;
+    height:60px;
+    margin-left:100px;
+   
+}
+.dropdown-toggle{
+    border-radius: 15px;
+    color:rgb(15, 15, 15)
 }
 .container{
-    background-color: rgb(225, 184, 184);
-    max-width: 1600px;
+    background-color: rgb(176, 208, 206);
+    max-width: 1900px;
+    
 }
 .row{
     max-width: 1300px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .card{
+        padding: 20px;
+        margin: 50px;
+        flex-direction: column;
+        width: 300px;
+        height: 330px;
+        background-color: rgb(225, 184, 184);
+        border:none;
+     
+        
+      }
+
+      .card h5{
+        position: absolute;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 35ch;
+        left: 275px;
+        color:white
+    }
+    .btn-primary{
+        margin-top: 20px;
+        width: 160px;
+        height: 70px;
+    }
+    strong{
+        color:blueviolet;
+        position:absolute;
+        top: 40px;
+        text-overflow: ellipsis; 
+     }
+}
+
+@media screen and (min-width: 320px){
+    .strong{
+       
+        color:blueviolet;
+        position:absolute;
+        top: 40px;
+        
+      }
+      .container{
+        color:green;
+      }
+      .row{
+        width: fit-content;
+        color: green;
+      }
 }

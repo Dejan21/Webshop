@@ -1,6 +1,6 @@
 .carousel-item{
-    max-width: 1550px;
-    max-height: 650px;
+    max-width: 1950px;
+    max-height: 880px;
     margin-top: 0px;
 }
 h5{
@@ -9,3 +9,16 @@ h5{
 p{
     font-size: 40px;
 }
+
+@media screen and (max-width: 600px)
+{
+    .h5{
+        color: blue
+    }
+    .carousel-item{
+      
+        max-height: 1580px;
+        margin-top: 0px;
+    }
+}
+    

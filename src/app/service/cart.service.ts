@@ -28,7 +28,6 @@ import { BehaviorSubject } from 'rxjs';
        addtoCart(product:any){
         this.cartItemList.push(product); //koga ke klikneme addtocart product ni se dodava
         this.productList.next(this.cartItemList);
-        this.getTotalPrice();
         console.log(this.cartItemList);
       }
  

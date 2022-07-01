@@ -17,7 +17,6 @@ export class CartComponent implements OnInit {
     this.cartService.getProducts()
     .subscribe((res: any)=>{
       this.products = res;
-      this.grandTotal =  this.cartService.getTotalPrice();
     })
   }
 

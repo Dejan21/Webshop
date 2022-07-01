@@ -11,6 +11,7 @@ export class StoreComponent implements OnInit {
 
   public productList: any; // store all the product here in this property
   public filterCategory:any;
+  isLoading: boolean | undefined;
 
 
   constructor(private api:ApiService, private cartService: CartService) { }
@@ -35,6 +36,10 @@ export class StoreComponent implements OnInit {
   
   addtoCart(item:any){
     this.cartService.addtoCart(item);
+    this.isLoading = true;
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1000)
   }
 
   // ovaa funckija e za da mi gi isfiltrira categorite pri prebaruvanje na produktite

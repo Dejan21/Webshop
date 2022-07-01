@@ -1,7 +1,7 @@
 <div class="container">
   <div class="container d-flex">
     <div class="dropdown">
-      <a
+      <button
         (click)="filter('')"
         class="dropdown-toggle"
         href="#"
@@ -11,7 +11,7 @@
         aria-expanded="false"
       >
         Filter Categories
-      </a>
+      </button>
 
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         <li>
@@ -32,7 +32,7 @@
       </ul>
     </div>
 
-    <div class="container">
+    <div class="container ">
       <div class="row">
         <ng-container *ngFor="let item of filterCategory">
           <div class="card">
@@ -40,8 +40,9 @@
               <h5>{{ item.title }}</h5>
             
               
-            <button class="btn btn-primary" (click)="addtoCart(item)">
+            <button class="btn btn-dark" (click)="addtoCart(item)">
               Add to cart
+              <span *ngIf="isLoading" class="spinner-border spinner-border-sm mr-1"></span>
             </button>
 
             <p>
