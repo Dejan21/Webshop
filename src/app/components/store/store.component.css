@@ -1,0 +1,82 @@
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-clip: border-box;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(190, 113, 113, 0.2);
+    border-radius: .25rem;
+    background: #fff;
+}
+.card{
+  padding: 20px;
+  margin: 50px;
+  flex-direction: row;
+  width: 500px;
+  height: 430px;
+  background-color: rgb(225, 184, 184);
+  border:none
+}
+ .item img{
+    width: 65px;
+    margin-top: 15px;
+    
+}
+.img{
+    mix-blend-mode: multiply;
+}
+
+.item a:hover{
+    color:blue;
+}
+.card h5{
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 35ch;
+    left: 275px;
+    color:white
+}
+.card p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+    margin-top: 50px;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: 65px;
+    left: 270px;
+    color:white;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform:scale(1.1);
+}
+.btn-primary{
+    margin-top: 220px;
+    width: 360px !important;
+    height: 50px;
+}
+strong{
+   color:blueviolet;
+   position:absolute;
+   text-overflow: ellipsis;
+   
+}
+.dropdown{
+    padding: 10px;
+}
+.container{
+    background-color: rgb(225, 184, 184);
+    max-width: 1600px;
+}
+.row{
+    max-width: 1300px;
+}

@@ -1,1 +1,50 @@
-<p>cart works!</p>
+<ng-container *ngIf="true">
+    <div class="card-table">
+        <div class="card-product">
+            <table class="table table-responsive">
+               <thead>
+                   <tr>
+                       <th>Sr.No</th>
+                       <th>Product Name</th>
+                       <th>Product Image</th>
+                       <th>description</th>
+                       <th>Price</th>
+                       <th>Quantity</th>
+                       <th>Total</th>
+                       <th>Action</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr *ngFor="let item of products">
+                       <td>{{item+ 1}}</td>
+                       <td>{{item.title}}</td>
+                       <td><img style="width:250px" src="{{item.image}}" alt=""></td>
+                       <td>{{item.description}}</td>
+                       <td>{{item.price}}</td>
+                       <td>{{item.quantity}}</td>
+                       <td>{{item.total}}</td>
+                       <td>
+                           <button (click)="removeItem(item)" class="btn btn-danger">Delete</button>
+                       </td>
+                   </tr>
+               </tbody>
+            </table>
+        </div>
+    </div>
+  </ng-container>
+
+
+  <ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My cart</h5>
+        </div>
+        <div class="center">
+            <img src="../assets/cart.jpg" alt="">
+            <h4>Your cart is empty</h4>
+            <h6>Your cart is empty</h6>
+            <button class="btn btn-secondary">Shop now</button>
+        </div>
+    </div>
+    
+</ng-container>
